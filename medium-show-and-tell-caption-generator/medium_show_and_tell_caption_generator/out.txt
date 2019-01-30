@@ -1,0 +1,9 @@
+INFO:medium_show_and_tell_caption_generator.model:Loading model filename: /opt/app/etc/show-and-tell.pb
+2018-11-09 09:12:57.765620: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+INFO:medium_show_and_tell_caption_generator.vocabulary:Initializing vocabulary from file: /opt/app/etc/word_counts.txt
+INFO:medium_show_and_tell_caption_generator.vocabulary:Created vocabulary with 11519 words
+INFO:__main__:Running caption generation on 1 files matching /opt/app/imgs/02.jpg
+Captions for image 02.jpg:
+ 0 a woman sitting on the seat of a car . 
+ 1 a woman sitting on the seat of a car talking on a cell phone . 
+ 2 a woman sitting on the seat of a car talking on a phone . 

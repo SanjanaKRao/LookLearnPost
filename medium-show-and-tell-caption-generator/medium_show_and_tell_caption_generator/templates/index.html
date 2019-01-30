@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--<link rel="stylesheet" href="./css/main.css" />-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}"/>
+	</head>
+
+	<!--<div onmouseover="repeater=setInterval(speak(one), 100);" onmouseout="clearInterval(repeater);"></div>-->
+
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
+						<li><a href="gallery.html"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="generic.html"><span class="icon fa-file-text-o"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Banner -->
+						<section id="banner">
+							<div class="inner">
+								<h1>LookLearnPost</h1>
+								<p>A caption generator</p>
+								<ul class="actions">
+									<li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2>A few pre-made examples</h2>
+									</header>
+									<div class="content">
+										<div class="media">
+										
+											<a href="/static/01.jpg"><img src="{{ url_for('static', filename='01.jpg') }}"   alt="" title=" a man in a suit and tie is smiling . "/></a>
+										
+										</div>
+										<div class="media">
+											<a href="/static/05.jpg"><img src="{{ url_for('static', filename='05.jpg') }}" alt="" title="a view of a river with a clock tower in the background ." /></a>
+										</div>
+										<div class="media">
+											<a href="/static/09.jpg"><img src="{{ url_for('static', filename='09.jpg') }}" alt="" title="an old truck is parked in a parking lot ." /></a>
+										</div>
+										<div class="media">
+											<a href="/static/02.jpg"><img src="{{ url_for('static', filename='02.jpg') }}" alt="" title="a woman sitting on the seat of a car ." /></a>
+										</div>
+										<div class="media">
+											<a href="/static/06.jpg"><img src="{{ url_for('static', filename='06.jpg') }}" alt="" title=" a man walking down a street holding an umbrella ." /></a>
+										</div>
+										<div class="media">
+											<a href="/static/10.jpg"><img src="{{ url_for('static', filename='10.jpg') }}" alt="" title="a black suitcase is sitting on the grass . " /></a>
+										</div>
+										<div class="media">
+											<a href="/static/03.jpg"><img src="{{ url_for('static', filename='03.jpg') }}" alt="" title="a man in a suit talking on a cell phone ." /></a>
+										</div>
+										<div class="media">
+											<a href="/static/07.jpg"><img src="{{ url_for('static', filename='07.jpg') }}" alt="" title="a herd of cattle grazing on a lush green hillside ." /></a>
+										</div>
+									</div>
+									
+								</div>
+						</section>	
+
+							<!-- Form -->
+							<div class="psycho">
+								<div class="column">
+									
+									<form action=/upload_file method="post" enctype="multipart/form-data">
+										<div class="field half first">
+											<label for="Picture"><Picture></Picture></label>
+											<input name="file" id="file" type="file" placeholder="Picture (eg.png,jpg)">
+											<input type="submit" value="Upload">
+										</div>
+										<!--<ul class="actions">
+											<li><input value="Generate-caption" class="button" type="submit"></li>
+										</ul>-->
+									</form>
+								</div>
+                            </div>
+						</section>
+
+					
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="./js/jquery.min.js"></script>
+			<script src="./js/jquery.poptrox.min.js"></script>
+			<script src="./js/jquery.scrolly.min.js"></script>
+			<script src="./js/skel.min.js"></script>
+			<script src="./js/util.js"></script>
+			<script src="./js/main.js"></script>
+
+	</body>
+</html>
